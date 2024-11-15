@@ -679,4 +679,4 @@ $jscomp.polyfill("Array.prototype.find", function(a) {
         a(b.target).parents(".form-group").find(".value")[0].innerHTML = b.target.value
     })
 })(jQuery);
-();
+
