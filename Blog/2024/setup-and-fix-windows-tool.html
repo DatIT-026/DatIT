@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="twitter:description" content="DatIT's Blog">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://datit-026.github.io/DatIT/">
+    <meta property="og:title" content="DatIT's Blog">
+    <meta property="og:description" content="DatIT's Blog">
+    <meta name="twitter:title" content="DatIT's Blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="../../assets/images/c-2.jpeg" type="image/x-icon">
+    <meta name="description" content="DatIT's Blog">
+    <title>Setup And Fix Windows Tool - DatIT's Blog</title>
+    <link rel="stylesheet" href="../../assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+    <link rel="stylesheet" href="../../assets/web/assets/mobirise-icons2/mobirise2.css">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../..assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../../assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="../../assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="../../assets/theme/css/style.css">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+    </noscript>
+    <link rel="preload" as="style" href="../../assets/mobirise/css/mbr-additional.css">
+    <link rel="stylesheet" href="../../assets/mobirise/css/mbr-additional.css" type="text/css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            background-color: #f0f0f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            padding: 5px 20px;
+        }
+
+        .text-group {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .main-title {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 25px;
+            padding-bottom: 5px;
+        }
+
+        /* Remove list styling for clean appearance */
+        .text-list {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .text-list p {
+            line-height: 1.4;
+        }
+
+        .text-item {
+            background-color: #ffffff;
+            /* White background for each item */
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow for depth */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .text-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            /* Slight lift on hover */
+        }
+
+        .text-item a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .card-text {
+            font-weight: 400;
+            font-size: 1.2em;
+            color: #333;
+            flex-grow: 1;
+            /* Expands to take available space */
+            padding-right: 50px;
+            /* Adds extra distance from the date */
+        }
+
+        .breadcrumb-nav {
+            margin: 15px 0;
+            padding: 0;
+            font-size: 0.9em;
+            display: flex;
+            justify-content: center;
+        }
+
+        .breadcrumb-list {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        .breadcrumb-link {
+            text-decoration: none;
+            color: #0071e3;
+        }
+
+        .breadcrumb-separator {
+            margin: 0 5px;
+            color: #6c757d;
+        }
+
+        .breadcrumb-current {
+            color: #6c757d;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section data-bs-version="5.1" class="menu menu1 cid-tj7L189Qtd" once="menu" id="menu1-8">
+        <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+            <div class="container">
+                <div class="navbar-brand">
+                    <span class="navbar-caption-wrap">
+                        <a class="navbar-caption text-black text-primary display-7" href="/DatIT/">DatIT</a>
+                    </span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
+                    data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                        <li class="nav-item">
+                            <a class="nav-link link text-black text-primary display-4" href="/DatIT">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link text-black text-primary display-4" href="../../blog">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section data-bs-version="5.1" class="features1 cid-tj7LlpW59w" id="features1-9">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Setup and Fix Windows Tool</strong>
+                    </h3>
+                    <p class="card-text mbr-fonts-style display-7" style="margin-top: 20px; text-align: center;">
+                        The tool that might help you in your work
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <nav aria-label="breadcrumb" class="breadcrumb-nav">
+        <ul class="breadcrumb-list">
+            <li><a href="/DatIT" class="breadcrumb-link">Home</a></li>
+            <li class="breadcrumb-separator">/</li>
+            <li><a href="../../blog" class="breadcrumb-link">Blog</a></li>
+            <li class="breadcrumb-separator">/</li>
+            <li class="breadcrumb-current">Setup and Fix Windows Tool</li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <main class="text">
+            <div class="text-group">
+                <ul class="text-list">
+                    <p>
+                        A streamlined command-line utility designed to quickly access essential Windows settings and
+                        troubleshoot common issues. Here is it's features include:
+                    </p>
+                    <p><strong>1. System Configuration:</strong> Access Computer Management, System Properties, and
+                        Programs.</p>
+                    <p><strong>2. Network & Devices:</strong> Manage Network, Sharing, and Print options.</p>
+                    <p><strong>3. Customization:</strong> Modify Personalization and Power settings.</p>
+                    <p><strong>4. Troubleshooting Tools:</strong> Fix Windows Updates, Wi-Fi issues, and view activation
+                        status.</p>
+                    <p><strong>5. Utilities:</strong> Date/Time settings, Region, System Info, and more.</p>
+                    <p>
+                        Designed for IT support, this tool is user-friendly and organized for fast system management.
+                        Ensure to run as Administrator for optimal functionality.
+                    </p>
+                </ul>
+                <img src="./setup-and-fix-windows-tool/setup-and-fix-windows-tool.webp" alt="Relevant Image" class="header-image">
+            </div>
+            <div class="text-group">
+                <div class="main-title display-5 align-left mb-2" style="margin-top: 15px;">
+                    <strong>Changelog & Download Links</strong>
+                </div>
+                <ul class="text-list list-unstyled">
+                    <li class="mb-4">
+                        <h5>v1.1.1 (Latest Version)</h5>
+                        <ul>
+                            <li><strong>New Feature:</strong> Enable/Disable Windows Update</li>
+                            <li><strong>Updates and Improvements:</strong>
+                                <ul>
+                                    <li>Wi-Fi troubleshooting tool enhancements</li>
+                                    <li>Updated link to Microsoft Activation Scripts AIO (MAS)</li>
+                                </ul>
+                            </li>
+                            <li>Fixed UI and compatibility issues (Windows 10, Windows 11)</li>
+                            <li>Update feature improvements</li>
+                            <li>Enhanced tool performance and optimization</li>
+                        </ul>
+                        <a href="./setup-and-fix-windows-tool/SAFW_Tool-v1.1.1.zip" style="color: #0078D7; text-decoration: none;"
+                            download>Download</a>
+                    </li>
+                    <li class="mb-4">
+                        <h5>v1.1.0</h5>
+                        <ul>
+                            <li><strong>New Features:</strong>
+                                <ul>
+                                    <li>Integration with Microsoft Activation Scripts AIO tool</li>
+                                </ul>
+                            </li>
+                            <li><strong>Optimizations:</strong> Enhanced Activation Status feature</li>
+                            <li>New UI compatible with Windows 7, 10, and 11</li>
+                            <li>Improved Update feature</li>
+                            <li>Performance enhancements</li>
+                        </ul>
+                        <a href="./setup-and-fix-windows-tool/SAFW_Tool-v1.1.0.zip" style="color: #0078D7; text-decoration: none;"
+                            download>Download</a>
+                    </li>
+                    <li class="mb-4">
+                        <h5>v1.0.9</h5>
+                        <ul>
+                            <li>Updated Update feature</li>
+                            <li>Display error fixes</li>
+                            <li>Interface refinements</li>
+                        </ul>
+                        <a href="./setup-and-fix-windows-tool/SAFW_Tool-v1.0.9.zip" style="color: #0078D7; text-decoration: none;"
+                            download>Download</a>
+                    </li>
+                    <li class="mb-4">
+                        <h5>Older Versions</h5>
+                        <ul>
+                            <li><strong>v1.0.8</strong> - Bug fixes, update feature added, removed unnecessary features
+                            </li>
+                            <li><strong>v1.0.7</strong> - Dark Mode, new interface, removed redundant features</li>
+                            <li><strong>v1.0.6</strong> - Crash fixes for Windows 7, removed unnecessary features</li>
+                            <li><strong>v1.0.5</strong> - Bug fixes, new features, removed unnecessary features</li>
+                            <li><strong>v1.0.4</strong> - New interface, added features, bug fixes</li>
+                            <li><strong>v1.0.3</strong> - Crash fixes, new interface, removed non-essential features
+                            </li>
+                            <li><strong>v1.0.2</strong> - Windows Update and Performance Fixes</li>
+                            <li><strong>v1.0.1</strong> - Initial crash and feature fixes</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    </div>
+
+    <section data-bs-version="5.1" class="footer3 cid-tj7Z3Ff0gp" once="footers" id="footer3-e">
+        <div class="container">
+            <div class="media-container-row align-center mbr-white">
+                <div class="row row-links">
+                    <ul class="foot-menu">
+                        <li class="foot-menu-item mbr-fonts-style display-7">
+                            <a href="/DatIT" class="text-white text-primary">Home</a>
+                        </li>
+                        <li class="foot-menu-item mbr-fonts-style display-7">
+                            <a href="devices" class="text-white">Devices</a>
+                        </li>
+                        <li class="foot-menu-item mbr-fonts-style display-7">
+                            <a href="../../blog" class="text-white">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row social-row">
+                    <div class="social-list align-right pb-2">
+                        <div class="soc-item">
+                            <a href="https://www.facebook.com/datit.dev" target="_blank">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://github.com/DatIT-026" target="_blank">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-github socicon"></span>
+                            </a>
+                        </div>
+                        <div class="soc-item">
+                            <a href="https://www.youtube.com/@firehelperteamofficial4702" target="_blank">
+                                <span class="mbr-iconfont mbr-iconfont-social socicon-youtube socicon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-copirayt">
+                    <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7"> © Copyright 2024
+                        FireHelper Team. All Rights Reserved. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="../../assets/ytplayer/index.js"></script>
+    <script src="../../assets/dropdown/js/navbar-dropdown.js"></script>
+    <script src="../../assets/theme/js/script.js"></script>
+</body>
+
+</html>
